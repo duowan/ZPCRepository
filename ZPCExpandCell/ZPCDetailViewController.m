@@ -49,6 +49,7 @@
 
 - (IBAction)backAction:(id)sender {
     [self expandCellDismissWithanimation:^{
+        //可用于调整一些动画细节
         self.backButton.alpha = 0.0;
     } completion:nil];
 }

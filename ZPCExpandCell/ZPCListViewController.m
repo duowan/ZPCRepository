@@ -71,6 +71,7 @@
     detailController.detailCell.textLabel.text = self.dataArray[indexPath.row];
     detailController.backButton.alpha = 0.0;
     [self expandCellToController:detailController withTableView:tableView withIndexPath:indexPath animation:^{
+        //可用于调整一些动画细节
         detailController.backButton.alpha = 1.0;
     } completion:nil];
 }
